@@ -2,7 +2,7 @@ import logging from '../config/logging';
 import { Request, Response } from 'express';
 import { telegramPostFunc } from '../telegramPostFunc';
 import config from '../config/config';
-import { ResponseSchema } from '../telegramPostFunc';
+import { ResponseSchema } from '../types';
 
 
 export const alertController = async (req: Request, res: Response) => {

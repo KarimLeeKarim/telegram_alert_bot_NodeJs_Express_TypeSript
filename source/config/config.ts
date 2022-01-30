@@ -8,8 +8,6 @@ const TOKEN=process.env.TOKEN;
 const TELEGRAM_API=`https://api.telegram.org/bot${TOKEN}`;
 const NAMESPACE = 'Sample controller';
 
-console.log('TOKEN', TOKEN);
-
 
 const SERVER = {
     hostname: SERVER_HOSTNAME,
