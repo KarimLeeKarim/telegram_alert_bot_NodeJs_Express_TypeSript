@@ -13,11 +13,9 @@ export const textFormatterFunc = (text: Provider): string=>{
 
 📊 *path_params*:  ${JSON.stringify(text.trace.path_params)}
 
-💃*request_body*:  ${JSON.stringify(text.trace.request_body)}
+🏋️*request_body*:  ${JSON.stringify(text.trace.request_body)}
 
 🌐 *request_url*:  ${text.trace.request_url}
 
 🛑  🛑  🛑  🛑  🛑  🛑  🛑  🛑  🛑  🛑  🛑  🛑
 `};
-
-// ${eachRequestBody.join('\n\n')}
