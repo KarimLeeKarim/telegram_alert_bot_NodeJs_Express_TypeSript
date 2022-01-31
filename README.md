@@ -11,8 +11,17 @@
 npm i nodemon concurrently
 ```
 
-2.Before run app please create in your project .env and put in this file below codes as a example:
+2.Before run app please create in your project `.env` and put in this file below codes as a example:
 ```bash
 TOKEN=your token from telegram botFather
-CHANNEL_ID=please create private channel and put here channelID in order to send all messages by this ID to your telegram
+CHANNEL_ID=please create private channel and put here channelID in order to send all messages by this ID 
+to your telegram
+```
+3.After that open your Postman as an example put below Object and send it as a method `POST`:
+```bash
+{
+    "name": "TEST",
+    "reason": "token fail",
+    "trace":  "TEST"
+}
 ```
