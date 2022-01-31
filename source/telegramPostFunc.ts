@@ -7,7 +7,7 @@ export const telegramPostFunc = async( text: Provider):  Promise<ResponseSchema>
     const value = textFormatterFunc(text);
     
     const response =  await axios.post(`${config.api_url}/sendMessage`, {
-        chat_id: config.chat_id,
+        chat_id: '-1001639214683',
         text: value,
         parse_mode: 'Markdown'
     })

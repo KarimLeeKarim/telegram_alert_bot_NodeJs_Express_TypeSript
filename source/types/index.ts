@@ -8,11 +8,8 @@ export interface Provider {
     trace: {
         trace: string,
         requested_service_name: string,
-        path_params: {
-            a:string,
-            b:string,
-        },
-        request_body: objectKeyValue,
+        path_params: string,
+        request_body: string,
         request_url: string,
     };
 };
