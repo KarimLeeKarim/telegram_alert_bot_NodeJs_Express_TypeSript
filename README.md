@@ -18,7 +18,7 @@ CHANNEL_ID=please create private channel and put here channelID in order to send
 to your telegram
 ```
 
-3.After that open your Postman as an example put below Object and send it as a method `POST`:
+3.After that open your Postman as an example put below Object and send it as a method `POST` to this url- `localhost:3000/alert-service/v1/alert`:
 ```bash
 {
     "name": "TEST",
