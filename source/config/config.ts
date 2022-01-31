@@ -7,7 +7,6 @@ const TELEGRAM_CHAT_ID = process.env.CHANNEL_ID;
 const TOKEN=process.env.TOKEN;
 const TELEGRAM_API=`https://api.telegram.org/bot${TOKEN}`;
 const NAMESPACE = 'Sample controller';
-console.log('process.env.CHANNEL_ID', process.env.CHANNEL_ID);
 
 const SERVER = {
     hostname: SERVER_HOSTNAME,
