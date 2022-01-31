@@ -11,7 +11,8 @@
 npm i nodemon concurrently
 ```
 
-2.For Start please enter below command:
+2.Before run app please create in your project .env and put in this file below codes as a example:
 ```bash
-npm run start
+TOKEN=your token from telegram botFather
+CHANNEL_ID=please create private channel and put here channelID in order to send all messages by this ID to your telegram
 ```
