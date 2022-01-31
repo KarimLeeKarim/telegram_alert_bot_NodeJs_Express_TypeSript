@@ -17,6 +17,7 @@ TOKEN=your token from telegram botFather
 CHANNEL_ID=please create private channel and put here channelID in order to send all messages by this ID 
 to your telegram
 ```
+
 3.After that open your Postman as an example put below Object and send it as a method `POST`:
 ```bash
 {
@@ -24,4 +25,9 @@ to your telegram
     "reason": "token fail",
     "trace":  "TEST"
 }
+```
+
+4.Last step is just run you App:
+```bash
+npm run start
 ```
