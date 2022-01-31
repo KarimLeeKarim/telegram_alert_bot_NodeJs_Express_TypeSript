@@ -11,7 +11,7 @@ export const textFormatterFunc = (text: Provider): string=>{
 
 🗣 *requested_service_name*:  ${text.trace.requested_service_name}
 
-🅰️ *path_params A*:  ${JSON.stringify(text.trace.path_params)}
+📊 *path_params*:  ${JSON.stringify(text.trace.path_params)}
 
 💃*request_body*:  ${JSON.stringify(text.trace.request_body)}
 
