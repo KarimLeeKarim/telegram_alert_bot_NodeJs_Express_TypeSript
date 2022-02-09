@@ -1,31 +1,17 @@
 import axios from 'axios';
 import config from './config/config';
-
-interface Provider {
-    service_name: string;
-    reason: string;
-    trace: string;
-}
-
-export interface ResponseSchema {
-    message: string;
-    status_code: number;
-}
+import { textFormatterFunc } from './textFormatter/textFormatterFunc';
+import { Provider, ResponseSchema } from './types';
 
 export const telegramPostFunc = async( text: Provider):  Promise<ResponseSchema> => {
-    const value = `💻 *Service name*: ${text.service_name}
-
-🛃 *Reason*: ${text.reason}
-
-💼 *Trace*: ${text.trace}`;
-    console.log(`${config.api_url}/sendMessage`);
+    const value = textFormatterFunc(text);
     
     const response =  await axios.post(`${config.api_url}/sendMessage`, {
-        chat_id: config.chat_id,
+        chat_id: '-1001639214683',
         text: value,
         parse_mode: 'Markdown'
     })
-    .then(ok=>{
+    .then(success=>{
         return Promise.resolve({
             message:'Message send is successful',
             status_code: 200,
