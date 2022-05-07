@@ -1,6 +1,9 @@
 node_modules/**/*
 build/**/*
 certs/**/*
+.env
+.gitlab-ci.yml 
+*.sh
 
 *.jks
 *.p8
@@ -9,5 +12,4 @@ certs/**/*
 *.mobileprovision
 *.orig.*
 
-package-lock.json.env
-.env
+package-lock.json

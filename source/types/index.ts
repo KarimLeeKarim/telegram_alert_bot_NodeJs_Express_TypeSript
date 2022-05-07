@@ -3,9 +3,15 @@ export type objectKeyValue = {
 };
 
 export interface Provider {
-    name: string;
+    service_name: string;
     reason: string;
-    trace: string;
+    trace: {
+        trace: string,
+        requested_service_name: string,
+        path_params: string,
+        request_body: string,
+        request_url: string,
+    };
 };
 
 export type ResponseSchema = {

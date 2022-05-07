@@ -18,10 +18,6 @@ const config = {
     chat_id: TELEGRAM_CHAT_ID,
     api_url:TELEGRAM_API,
     ns:NAMESPACE,
-    parseModes: {
-        mark: 'Markdown',
-        html: 'html',
-    }
 };
 
 export default config;
