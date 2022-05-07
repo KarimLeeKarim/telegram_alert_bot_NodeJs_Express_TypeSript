@@ -1,21 +1,20 @@
-import { Provider } from "../types";
+import { ProviderDB } from '../types';
 
-export const textFormatterFunc = (text: Provider): string=>{
-
-//Define Text Format in Telegram
+export const textFormatterFunc = (text: ProviderDB): string => {
+    //Define Text Format in Telegram
     return `💻 *service_name*:  ${text.service_name}
 
-🛃 *reason*:  ${text.reason}
+💼 *trace*:  ${text.trace}
 
-💼 *trace*:  ${text.trace.trace}
+🗣 *requested_service_name*:  ${text.requested_name}
 
-🗣 *requested_service_name*:  ${text.trace.requested_service_name}
+📊 *path_params*:  ${JSON.stringify(text.path_params)}
 
-📊 *path_params*:  ${JSON.stringify(text.trace.path_params)}
+🏋️*request_body*:  ${JSON.stringify(text.request_body)}
 
-🏋️*request_body*:  ${JSON.stringify(text.trace.request_body)}
+🛃 *request_methods*:  ${text.request_methods}
 
-🌐 *request_url*:  ${text.trace.request_url}
-
+🌐 *request_url*:  ${text.request_url}
 🛑  🛑  🛑  🛑  🛑  🛑  🛑  🛑  🛑  🛑  🛑  🛑
-`};
+`;
+};

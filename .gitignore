@@ -4,6 +4,7 @@ certs/**/*
 .env
 .gitlab-ci.yml 
 *.sh
+.vscode
 
 *.jks
 *.p8

@@ -3,10 +3,6 @@ dotenv.config();
 import logging from '../config/logging';
 import { Request, Response } from 'express';
 
-// interface RequestWithBody extends Request{
-//     body: {[key:string] : string | object}
-// }
-
 const NAMESPACE = 'Sample controller';
 
 export const healthController = (req: Request, res: Response) => {
