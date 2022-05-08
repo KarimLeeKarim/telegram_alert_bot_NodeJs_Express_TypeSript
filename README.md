@@ -28,8 +28,8 @@ DIALECT=postgres or another as MySQL, MongoDB etc...
 npm run start
 ```
 
-4.Before start using POSTMAN you should be aware that you have a created DATABASE with all needed specials which you have already created
-at .ENV, otherwise nothing will work
+4.Before start using `POSTMAN` you should be aware that you have a created DATABASE with all needed specials which you have already created
+at `.env`, otherwise nothing will work
 
 
 5.After that open your Postman as an example put below Object and send it as a method `POST` to this <br>
