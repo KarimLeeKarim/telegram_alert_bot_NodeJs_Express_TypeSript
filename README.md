@@ -16,6 +16,11 @@ npm i nodemon concurrently
 TOKEN=your token from telegram botFather
 CHANNEL_ID=please create private channel and put here channelID in order to send all messages by this ID 
 to your telegram
+DB=indicate your DataBase name
+USERNAME=your indicated username
+PASSWORD=your indicated password
+HOST=localhost or you can indicate another one
+DIALECT=postgres or another as MySQL, MongoDB etc...
 ```
 
 3.Last step is just run you App:
@@ -35,13 +40,7 @@ url- `localhost:80/alert-service/v1/alert`:
 
 5.If you would like to filter by special value you can use this URL and choose method `GET` to this <br>
 url- `localhost:80/alert-service/v1/alert-info?trace=example`:
-```bash
-{
-    "name": "TEST",
-    "reason": "token fail",
-    "trace":  "TEST"
-}
-```
+
 
 6.For get special page you need use this URL and choose method `GET` to this <br>
 url- `localhost:80/alert-service/v1/alert-info?page=1` or indicate special page and size(values per page) `localhost:80/alert-service/v1/alert-info?page=1&size=3`
