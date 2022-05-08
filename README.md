@@ -33,7 +33,7 @@ at `.env`, otherwise nothing will work
 
 
 5.After that open your Postman as an example put below Object and send it as a method `POST` to this <br>
-url- `localhost:3000/alert-service/v1/alert`:
+url- `localhost:3000/alert-service/v1/alert`
 ```bash
 {
     "name": "TEST",
