@@ -29,11 +29,11 @@ npm run start
 ```
 
 4.Before start using `POSTMAN` you should be aware that you have a created DATABASE with all needed specials which you have already created
-at `.env`, otherwise nothing will work
+at `.env`, otherwise nothing will work.
 
 
 5.After that open your Postman as an example put below Object and send it as a method `POST` to this <br>
-url- `localhost:3000/alert-service/v1/alert`
+url- `localhost:3000/alert-service/v1/alert`:
 ```bash
 {
     "name": "TEST",
@@ -43,10 +43,10 @@ url- `localhost:3000/alert-service/v1/alert`
 ```
 
 6.If you would like to filter by special value you can use this URL and choose method `GET` to this <br>
-url- `localhost:3000/alert-service/v1/alert-info?name=example`:
+url- `localhost:3000/alert-service/v1/alert-info?name=example`.
 
 
 7.For get special page you need use this URL and choose method `GET` to this <br>
-url- `localhost:3000/alert-service/v1/alert-info?page=1` or indicate special page and size(values per page) `localhost:80/alert-service/v1/alert-info?page=1&size=3`
+url- `localhost:3000/alert-service/v1/alert-info?page=1` or indicate special page and size(values per page) `localhost:80/alert-service/v1/alert-info?page=1&size=3`.
 
 
