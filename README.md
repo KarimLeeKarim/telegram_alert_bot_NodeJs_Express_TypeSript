@@ -6,7 +6,7 @@
  - Nodeman will monitor for any changes in your source and automatically restart your server when your code changes.<br>
  - Concurrently module will help us to run  many scripts.<br>
  
-*Also be advised that in package.json in scripts field `tsc -w` will create compilation from TS to JS process but automatic*
+*Also be advised that in package.json in scripts field `tsc -w` will create compilation from TS to JS process but automatic*:
 ```bash
 npm i nodemon concurrently
 ```
