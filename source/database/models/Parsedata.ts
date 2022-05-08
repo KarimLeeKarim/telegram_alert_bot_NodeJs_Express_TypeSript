@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 const db = require('../../config/db');
-const table = 'parsedata';
+const table = 'alert';
 
 export const Parsedata = db.define(table, {
     id: {
@@ -9,27 +9,15 @@ export const Parsedata = db.define(table, {
         allowNull: false,
         defaultValue: Sequelize.UUIDV4
     },
-    service_name: {
+    name: {
+        type: Sequelize.STRING
+    },
+    reason: {
         type: Sequelize.STRING
     },
     trace: {
         type: Sequelize.STRING
     },
-    requested_name: {
-        type: Sequelize.STRING
-    },
-    path_params: {
-        type: Sequelize.JSON
-    },
-    request_body: {
-        type: Sequelize.JSON
-    },
-    request_methods: {
-        type: Sequelize.STRING
-    },
-    request_url: {
-        type: Sequelize.STRING
-    }
 });
 
 Parsedata.sync()

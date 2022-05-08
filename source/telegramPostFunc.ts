@@ -1,9 +1,9 @@
 import axios from 'axios';
 import config from './config/config';
 import { textFormatterFunc } from './textFormatter/textFormatterFunc';
-import { ProviderDB, ResponseSchema } from './types';
+import { Provider, ResponseSchema } from './types';
 
-export const telegramPostFunc = async (text: ProviderDB): Promise<ResponseSchema> => {
+export const telegramPostFunc = async (text: Provider): Promise<ResponseSchema> => {
     const value = textFormatterFunc(text);
 
     const response = await axios

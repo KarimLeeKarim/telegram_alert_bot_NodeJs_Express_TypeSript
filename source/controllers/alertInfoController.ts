@@ -1,4 +1,4 @@
-import { ProviderDB } from '../types';
+import { Provider } from '../types';
 import { Request, Response } from 'express';
 import { filtratioByQueryString, isEmptyCheker, paginationCreator } from '../helpers/utils';
 import { Parsedata } from '../database/models/Parsedata';
@@ -20,7 +20,7 @@ export const getAlertInfo = async (request: RequestInterface, response: Response
     paginationCreator(page, size, response);
 };
 
-export const createAlertInfo = (postText: ProviderDB): void => {
+export const createAlertInfo = (postText: Provider): void => {
     Parsedata.create(postText)
         .then(() => console.log('Columns were added to the database'))
         .catch((err: any) => console.log(`Error is here ${err}`));
