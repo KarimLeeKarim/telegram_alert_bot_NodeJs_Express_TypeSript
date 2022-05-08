@@ -29,7 +29,7 @@ npm run start
 ```
 
 4.After that open your Postman as an example put below Object and send it as a method `POST` to this <br>
-url- `localhost:80/alert-service/v1/alert`:
+url- `localhost:3000/alert-service/v1/alert`:
 ```bash
 {
     "name": "TEST",
@@ -39,10 +39,10 @@ url- `localhost:80/alert-service/v1/alert`:
 ```
 
 5.If you would like to filter by special value you can use this URL and choose method `GET` to this <br>
-url- `localhost:80/alert-service/v1/alert-info?trace=example`:
+url- `localhost:3000/alert-service/v1/alert-info?trace=example`:
 
 
 6.For get special page you need use this URL and choose method `GET` to this <br>
-url- `localhost:80/alert-service/v1/alert-info?page=1` or indicate special page and size(values per page) `localhost:80/alert-service/v1/alert-info?page=1&size=3`
+url- `localhost:3000/alert-service/v1/alert-info?page=1` or indicate special page and size(values per page) `localhost:80/alert-service/v1/alert-info?page=1&size=3`
 
 
